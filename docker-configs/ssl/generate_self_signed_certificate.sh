@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Required
-DOMAIN=nano.docker
-COMMONNAME=nano.docker
-CANAME=CA_nano_docker
+DOMAIN=local.docker
+COMMONNAME=local.docker
+CANAME=CA_local_docker
 PASSWORD=$(openssl rand -hex 16)
 DAYS=730 # 2 anos
 
@@ -11,7 +11,7 @@ DAYS=730 # 2 anos
 country=BR
 state='Sao Paulo'
 locality=Indaiatuba
-organization='Nano Incub Develop'
+organization='Local Incub Develop'
 organizationalunit=IT
 
 SCRIPT_PATH=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
@@ -105,7 +105,7 @@ mkdir -p $SCRIPT_PATH/../apache/certs
 cp $SCRIPT_PATH/server-certs/$DOMAIN.crt $SCRIPT_PATH/../apache/certs/server.crt
 cp $SCRIPT_PATH/server-certs/$DOMAIN.key $SCRIPT_PATH/../apache/certs/server.key
 
-printf "\n\n>>> Moving nano_docker_ssl.pem to root folder. \n\n"
-cp $SCRIPT_PATH/server-certs/CLIENT_$CANAME.pem $SCRIPT_PATH/../../nano_docker_ssl.pem 
+printf "\n\n>>> Moving local_docker_ssl.pem to root folder. \n\n"
+cp $SCRIPT_PATH/server-certs/CLIENT_$CANAME.pem $SCRIPT_PATH/../../local_docker_ssl.pem 
 
 printf "\n\n>>>>>> End of SSL Certificate Creation. <<<<<< \n\n"
