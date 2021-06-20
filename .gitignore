@@ -1,0 +1,9 @@
+.idea/
+.env
+
+/docker-persist/db/mysql/*
+/docker-persist/backups-mysql/*
+/docker-configs/nginx/log/*
+.history
+
+.DS_STORE
