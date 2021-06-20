@@ -36,7 +36,7 @@
 ### Clone o repositório
 
 ```bash
-git clone https://gitlab.com/nanoincub/congelados/docker/docker-php-56-72-apache.git
+git clone https://github.com/victorandrad/docker-apache-php.git
 ```
 
 ### Renomeie o arquivo `.env.example` para `.env`
@@ -105,7 +105,7 @@ Para utilizar o certificado, siga as seguintes etapas:
 
 1. Abra o seu e acesse `Configurações > Gerenciar Certificados`.
 2. Clique em Importar.
-3. Selecione o arquivo `nano_docker_ssl.pem` que esta na pasta raiz.
+3. Selecione o arquivo `local_docker_ssl.pem` que esta na pasta raiz.
 4. Selecione o repositório `Autoridades de Certificação Raiz Confiáveis`.
 5. Feche e abra o navegador
 6. Verifique se o link [https://php72.local.docker/](https://php72.local.docker/) está funcionando, se não funcionar reinicie o computador.
@@ -114,8 +114,8 @@ Para utilizar o certificado, siga as seguintes etapas:
 
 Para utilizar o certificado, siga as seguintes etapas:
 
-1. Dê dois cliques no arquivo `nano_docker_ssl.pem` que esta na pasta raiz.
-2. Confirme sua senha no aplicativo `Acesso às chaves`, utilize a busca para procurar o certificado `nano.docker`.
+1. Dê dois cliques no arquivo `local_docker_ssl.pem` que esta na pasta raiz.
+2. Confirme sua senha no aplicativo `Acesso às chaves`, utilize a busca para procurar o certificado `local.docker`.
 3. Dê dois cliques, vá em `confiar -> ao usar este certificado -> Confiar Sempre`.
 4. Feche e abra o navegador.
 5. Verifique se o link [https://php72.local.docker/](https://php72.local.docker/) está funcionando, se não funcionar reinicie o computador.
@@ -142,7 +142,7 @@ Após executar o comando é só reiniciar o container e reinstalar o certificado
 
 **ERRO:** `Couldn't connect to Docker daemon - you might need to run docker-machine start default`
 
-MacBook-Pro-de-Russell:docker-nanodev russ$ docker-machine start default
+MacBook-Pro-de-Victor:docker-localdev russ$ docker-machine start default
 Starting "default"...
 Machine "default" is already running.`
 
