@@ -24,6 +24,8 @@
 - MailHog - <http://mailhog.local.docker/>
 
 ---
+Obs: Para usar o MySQL utilize esse link para baixar [https://github.com/victorandrad/docker-mysql](https://github.com/victorandrad/docker-mysql)
+---
 
 ## 🛠 Pré-requisitos
 
@@ -109,6 +111,7 @@ Para utilizar o certificado, siga as seguintes etapas:
 4. Selecione o repositório `Autoridades de Certificação Raiz Confiáveis`.
 5. Feche e abra o navegador
 6. Verifique se o link [https://php72.local.docker/](https://php72.local.docker/) está funcionando, se não funcionar reinicie o computador.
+
 
 ### Como fazer no MacOS
 
