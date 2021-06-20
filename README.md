@@ -54,7 +54,7 @@ git clone https://github.com/victorandrad/docker-apache-php.git
 ### Acesse a pasta do projeto
 
 ```bash
-cd docker-php-56-72-apache
+cd docker-php-56-72-73-apache
 ```
 
 ### Suba os containers
