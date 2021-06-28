@@ -14,9 +14,6 @@ RUN  apt-get -y install php5-intl
 # Install GD2
 RUN apt-get -y install php5-gd
 
-# Install Prestissimo (composer plugin)
-RUN composer global require hirak/prestissimo
-
 # Install the Oracle Instant Client
 # Default false
 ARG OCI8_INSTALL=0
