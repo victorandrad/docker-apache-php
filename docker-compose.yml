@@ -65,10 +65,10 @@ services:
         ports:
             - 8080:80
         environment:
-            - PMA_ARBITRARY=1
+            - PMA_ARBITRARY=0
             - PMA_HOST=${MYSQL_HOST}
-            - PMA_USER=${MYSQL_ROOT_USER}
-            - PMA_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            # - PMA_USER=${MYSQL_ROOT_USER}
+            # - PMA_PASSWORD=${MYSQL_ROOT_PASSWORD}
             - UPLOAD_LIMIT=500000000
         networks:
             - webserver_network
