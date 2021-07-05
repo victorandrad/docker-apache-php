@@ -4,7 +4,7 @@ services:
         image: 'bitnami/apache:2.4.41-debian-10-r11'
         container_name: 'apache'
         ports:
-            - '80:8080'
+            - '80:8072'
             - '443:8443'
         volumes:
             - "${SHARED_FOLDER_DIR}:/app"
